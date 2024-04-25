@@ -1,0 +1,17 @@
+* {
+    color: blue;
+    background: black;
+}
+
+button {
+    font-size: 40px;
+}
+
+h1,
+h2 {
+    color: white;
+}
+
+span {
+    color: #457b9d;
+}

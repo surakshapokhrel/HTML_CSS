@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms demo </title>
+</head>
+
+<body>
+    <h1>FORMS </h1>
+    <form action="/search">
+        <p>
+            <label for="username">ENTER A USERNAME: </label>
+            <input id="username" type="text" placeholder="USERNAME">
+        </p>
+        <p>
+            <label for="password">Enter your password:</label>
+            <input id="password" type="password" placeholder="">
+        </p>
+        <p>
+            <label for="color">enter the color :</label>
+            <input id="color" type="color">
+        </p>
+        <label for="number">enter the number</label>
+        <input id="number" type="number" placeholder="enter the number">
+        <p>
+            <button>submit</button>
+        </p>
+        <input type="submit" value="click me">
+    </form>
+    <hr>
+    <button>not inside form </button>
+    <h2>Hijacking search </h2>
+    <h3>search google </h3>
+    <form action="https://www.google.com/search">
+        <p>
+            <input type="text" name="query">
+
+            <button>search google</button>
+        </p>
+    </form>
+    <h3>search youtube </h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>search youtube</button>
+
+    </form>
+
+    </form>
+    <h2>more inputs !</h2>
+    <form action="/birds"></form>
+    <input type="checkbox" name="agree_tos" id="agree">
+    <label for="agree"> i agree to everything </label>
+    <p>
+        <label for="xs">xs:</label>
+        <input type="radio" name="size" id="xs" value="xs">
+        <label for="s">s</label>
+        <input type="radio" name="size" id="s" value="s">
+        <label for="m">m</label>
+        <input type="radio" name="size" id="m" value="m">
+    </p>
+    <p>
+        <label for="">please select an entree</label>
+        <select name="meal" id="meal">
+            <option value="fish">fish</option>
+            <option value="vegetarian">vagetarian</option>
+            <option value="steak">steak</option>
+        </select>
+    </p>
+    <p>
+        <label for="cheese">amount of cheese:</label>
+        <input type="range" id="cheese" min="1" max="10" step="7" name="cheese_level">
+    </p>
+    <button>sumbit </button>
+    <h2>validation demo</h2>
+    <form action="/dummy">
+        <label for="first">Enter First Name </label>
+
+        <input type="text" name="first" id="first" required>
+        <label for="Username">Username</label>
+        <input type="text" id="username" minlength="5" maxlength="20" required>
+        <p>
+            <input type="email" required>
+            <input type="url">
+        </p>
+        <button>submit</button>
+    </form>
+    <h2>Race Registration !</h2>
+    <form action="race">
+        <label for="first">First name</label>
+        <input type="text" name="first " id="first">
+        <label for="last">last name</label>
+        <input type="text" name="last" id="last">
+
+    </form>
+    <h3>select a race</h3>
+    <form action="race">
+
+        <p>
+
+            <input type="radio" name="race" id="pun">
+            <label for="pun">pun run 5k</label>
+        </p>
+        <p>
+
+            <input type="radio" name="race" id="half">
+            <label for="half">half margv</label>
+        </p>
+        <p>
+
+            <input type="radio" name="race" id="full">
+            <label for="full">full majhs</label>
+        </p>
+    </form>
+    <p>
+        <label for="email">email</label>
+        <input type="emial" required>
+        <label for="password">password</label>
+        <input id="password" type="password" placeholder="">
+    </p>
+</body>
+
+</html>
